@@ -1,0 +1,20 @@
+# Flutter / Dart
+product_admin/.dart_tool/
+product_admin/build/
+product_admin/.flutter-plugins
+product_admin/.flutter-plugins-dependencies
+product_admin/.packages
+product_admin/pubspec_overrides.yaml
+# Android
+product_admin/android/.gradle/
+product_admin/android/local.properties
+product_admin/android/key.properties
+*.jks
+*.keystore
+# IDE / OS
+.idea/
+.vscode/
+*.iml
+.DS_Store
+# Local tooling
+.claude/

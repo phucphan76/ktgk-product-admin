@@ -1,0 +1,28 @@
+{
+  "products": {
+    "9cObl3xjBI68Ef4o6d34": {
+      "name": "Mắt kính Y2K",
+      "price": 250000,
+      "soluong": 5,
+      "image": "https://res.cloudinary.com/gx3dk3gu/image/upload/v1794417530/xy9dufgtdbrnz8aklxqj.webp"
+    },
+    "JmpDFICPNEXDxdidYMJd": {
+      "name": "Áo thun Y2K",
+      "price": 150000,
+      "soluong": 10,
+      "image": "https://res.cloudinary.com/gx3dk3gu/image/upload/v1794416364/broznfkl0fmla0ggkza6.webp"
+    },
+    "MnzxA7Bz5WSTByZ3cAI9": {
+      "name": "Denim Mini Short",
+      "price": 400000,
+      "soluong": 5,
+      "image": "https://res.cloudinary.com/gx3dk3gu/image/upload/v1794417789/thuihkdznq5t2fibm44o.webp"
+    },
+    "RJdIwgglKIvM1R4Fb3HE": {
+      "name": "Mũ lưỡi trai Y2K",
+      "price": 130000,
+      "soluong": 0,
+      "image": "https://res.cloudinary.com/gx3dk3gu/image/upload/v1794417932/odj6fy2gyezqp8ns8lhc.jpg"
+    }
+  }
+}
