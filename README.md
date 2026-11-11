@@ -37,6 +37,21 @@ File dữ liệu xuất ra: [database/products.json](database/products.json).
 
 ## Cài đặt & chạy
 
+### Cấu hình Firebase (bắt buộc trước khi chạy)
+
+File cấu hình thật `lib/firebase_options.dart` chứa API key nên **không được đưa lên GitHub**. Tạo nó từ file mẫu:
+
+```bash
+cd product_admin
+cp lib/firebase_options.example.dart lib/firebase_options.dart
+```
+
+Sau đó điền các giá trị lấy từ Firebase console → Project settings → Your apps (Web app và Android app, package `com.ktgk.product_admin`).
+Project Firebase cần: Firestore Database, Authentication (bật Email/Password, tạo tài khoản admin) và Firestore Rules từ [database/firestore.rules](database/firestore.rules).
+Cloudinary: tạo upload preset kiểu **Unsigned**, khai báo cloud name + preset trong `lib/config.dart`.
+
+### Chạy ứng dụng
+
 ```bash
 # 1. Cài thư viện
 cd product_admin
@@ -65,9 +80,7 @@ flutter analyze
 flutter test
 ```
 
-Cấu hình Firebase nằm ở `lib/firebase_options.dart`, Cloudinary ở `lib/config.dart`
-(các giá trị này là định danh công khai phía client, dữ liệu được bảo vệ bằng Auth + Firestore Rules).
-Hướng dẫn tạo project Firebase/Cloudinary: [docs/SETUP_CONSOLE.md](docs/SETUP_CONSOLE.md).
+Dữ liệu được bảo vệ bằng Firebase Authentication + Firestore Rules (chỉ admin đã đăng nhập mới đọc/ghi được).
 
 ## Cấu trúc mã nguồn
 
@@ -76,7 +89,7 @@ product_admin/lib/
 ├── main.dart                  # Khởi tạo Firebase, màn hình khởi động, AuthGate
 ├── main_preview.dart          # Chế độ xem thử giao diện (dữ liệu mẫu)
 ├── config.dart                # Cloudinary cloud name + upload preset
-├── firebase_options.dart      # Cấu hình Firebase Web + Android
+├── firebase_options.example.dart # Mẫu cấu hình Firebase (copy thành firebase_options.dart)
 ├── models/product.dart        # Product {name, price, soluong, image}
 ├── services/
 │   ├── auth_service.dart      # Đăng nhập / đăng xuất, thông báo lỗi tiếng Việt

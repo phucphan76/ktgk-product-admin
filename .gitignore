@@ -22,3 +22,11 @@ product_admin/android/key.properties
 # Office lock files
 .~lock.*#
 ~$*
+
+# Report and working docs (submitted separately, not part of the source)
+docs/
+BaoCao_KTGK.docx
+
+# Firebase config with API keys (use lib/firebase_options.example.dart as template)
+product_admin/lib/firebase_options.dart
+product_admin/android/app/google-services.json
