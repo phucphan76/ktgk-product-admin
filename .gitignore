@@ -18,3 +18,7 @@ product_admin/android/key.properties
 .DS_Store
 # Local tooling
 .claude/
+
+# Office lock files
+.~lock.*#
+~$*
